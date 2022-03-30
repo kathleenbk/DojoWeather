@@ -1,18 +1,17 @@
+// Loading alert
 function loading() {
     alert("Loading weather report...");
 }
 var cookieJar = document.querySelector("#cookieJar")
 console.log(cookieJar);
 
+// Cookies
 function accept() {
     console.log("Removing...");
     cookieJar.remove();
 }
 
-var ftemp = [75, 65, 80, 66, 69, 61, 78, 70];
-
-var ctemp = [24, 18, 27, 19, 21, 16, 26, 21];
-
+// Convert Temperature
 function c2f(temp) {
     return Math.round(9/5 * temp + 32);
 };
